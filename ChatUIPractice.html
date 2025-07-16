@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar Example</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+</head>
+<body>
+  <div class="flex h-screen">
+
+    <!--Sidebar-->
+    <aside class="w-60 bg-gray-900 text-amber-50">Sidebar
+    </aside>
+
+    <!--Message List-->
+    <div class = "flex flex-col flex-1">
+      <header class="flex justify-end px-5 bg-blue-950 text-amber-200"> #general
+      </header>
+      <main class="flex-1 p-8">
+      </main>
+      <div class="flex flex-row bg-gray-400">
+        <button class=" mx-1 my-2 px-1  rounded bg-amber-50 text-gray-600" >+
+        </button>
+        <!-- Input -->
+        <footer class="flex px-1.5 py-2 justify-center" >
+          <input 
+            type= 'text'
+            placeholder= "Type a message"
+            class="bg-gray-100 w-full rounded px-2"
+          />
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
